@@ -5,3 +5,6 @@ public class hello {
         System.out.println("王毅伟你个憨憨");
     }
 }
+
+
+//接受输入？？
