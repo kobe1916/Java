@@ -56,3 +56,34 @@ class Main {
 }
 
  */
+
+import java.math.*;
+public class Point {
+
+    Double x;   Double y;
+    public Point(Double x, Double y) {
+        this.x = x; this.y = y;
+    }
+    public void setX(Double x) { this.x = x; }
+
+    public void setY(Double y) { this.y = y; }
+
+    public Double getX() { return x; }
+
+    public Double getY() { return y; }
+
+
+    public Point(){ }//构造重载方法
+
+    public  Double Distance() {
+        return Math.sqrt(x*x+y*y);
+    }//返回距离
+}
+/*
+class Main{
+    public static void main(String[] args){
+        System.out.println("距离为："+Point.Distance());
+    }
+}
+
+*/
