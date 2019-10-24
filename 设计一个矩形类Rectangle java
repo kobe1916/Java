@@ -1,0 +1,18 @@
+class Rectangle
+{
+	double width,height;
+	public Rectangle() {
+		this.width=1;
+		this.height=1;
+	}
+	public Rectangle(double x,double y) {
+		this.width=x;
+		this.height=y;
+	}
+	public double getArea() {
+		return this.width*this.height;
+	}
+	public double getPerimeter() {
+		return 2*(this.width+this.height);
+	}
+}
