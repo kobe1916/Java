@@ -14,3 +14,66 @@ public String toString(); //以格式“矩形（w，h）”返回当前矩形�
 定义测试类测试该类。
 
 */
+
+
+import java.util.*;
+
+class Rectangle{
+    int w,h;
+    public Rectangle(int w,int h){
+        this.w = w;
+        this.h = h;
+    }
+    public Rectangle(){
+        this(1,1);
+    }
+    public int getWidth(){
+        return w;
+    }
+    public int getHeigth(){
+        return h;
+    }
+    public void setH(int H){
+        this.h = h;
+    }
+    public void setW(int w){
+        this.w = w;
+    }
+    public double getArea(){
+        return w*h;
+    }
+    public double getPerimeter(){
+        return 2*(w+h);
+
+    }
+    public String toString(){
+        return "矩形("+w+","+h+")";
+    }
+    public boolean equals(Rectangle r){
+        if(r.getWidth() == this.w && r.getHeigth() == this.h)
+            return true;
+        return false;
+    }
+
+}
+
+public class Rectangle1 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int w,h;
+        Rectangle o1,o2;
+        w = scanner.nextInt();
+        h = scanner.nextInt();
+        o1 = new Rectangle(w,h);
+        o2 = new Rectangle();
+        System.out.println("矩形面积为：>"+o1.getArea());
+        System.out.println("矩形周长为：>"+o1.getPerimeter());
+        System.out.println("矩形长为：>"+o1.getHeigth());
+        System.out.println("矩形宽为：>"+o1.getWidth());
+        System.out.println(o1.toString());
+        System.out.println("判断是否相等:");
+        System.out.println(o1.equals(o2));
+
+
+    }
+}
