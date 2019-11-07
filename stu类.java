@@ -15,12 +15,12 @@ public class SxtStu{
   System.out.println();
   }
   
-  //程序的入口
+  //程序执行的入口（main方法）
   public static void main(String[] args){
     SxtStu stu = new SxtStu();
     stu.play();
     }
-    }
+}
   
   
   
