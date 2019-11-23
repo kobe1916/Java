@@ -1,3 +1,4 @@
+/*
 包机制是Java中管理类的重要方法。
 开发中，我们会遇到大量同名的类，通过包我们很容易对解决类重名的问题，
 也可以实现对类的有效管理。
@@ -17,3 +18,26 @@ import后，便于编写代码，提高可维护性。
 Java会默认导入java.lang包下所有的类，因此这些类我们可以直接使用。
 如果要导入两个同名的类，只能用包名+类名来显示调用相关类
  java.util.Date date = new java.util.Date();
+*/
+package 面向对象.cn.user1;
+
+import 面向对象.cn.user.User;
+public class user {
+    public static void main(String[] args){
+        User user = new User();
+        //System.out.println("456");
+    }
+}
+
+
+/*
+package 面向对象.cn.user;
+
+public class User {
+    public static void main(String[] args){
+        System.out.println("123");
+    }
+
+}
+
+*/
