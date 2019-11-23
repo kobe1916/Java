@@ -25,6 +25,7 @@ import 面向对象.cn.user.User;
 public class user {
     public static void main(String[] args){
         User user = new User();
+     //面向对象.cn.user.User user = 面向对象.cn.user.User();
         //System.out.println("456");
     }
 }
