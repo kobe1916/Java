@@ -17,7 +17,9 @@ public class TestExtend{
 	stu.rest();
 
 	Student stu2 = new Student("xixi",6,"wajueji");
-              	
+        }
+}
+	
 
 
 class Person{
@@ -26,7 +28,7 @@ class Person{
 
 	public void rest(){
 	System.out.println("休息一会");
-}
+	}
 }
 class Student extends Person{
 	/*String name;
@@ -35,15 +37,30 @@ class Student extends Person{
 	
 	public void study(){
 	System.out.println("学习两小时");
-}
+	}
 	/*public void rest(){
 	System.out.println("休息一会");
-}*/`
+	}*/
 	public Student(String name,int height,String major){
 	this.name = name;
 	this.height = heighe;
 	this.major = major;
-}
+	}
 
 
 } 
+	      
+	      
+/*
+instanceof运算符：
+instanceof是二元运算符，左边是对象，右边是类；
+当对象是右面类或子类所创建的对象时，返回true；否则返回false
+public class Test{
+	public static void main(String[] args){
+		Student s = new Student("gaoqi",172,"java");
+		System.out.println(s instanceof Person);
+		System.out.println(s  instanceof Student);
+	}
+}
+//两句语句的输出都是true
+*/
