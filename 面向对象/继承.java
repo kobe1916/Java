@@ -41,11 +41,12 @@ class Student extends Person{
 	/*public void rest(){
 	System.out.println("休息一会");
 	}*/
-	public Student(String name,int height,String major){
+	public Student(String name,int height,String major){//重载   stu2对应的多参
 	this.name = name;
-	this.height = heighe;
+	this.height = height;
 	this.major = major;
 	}
+	public Student{}//重载   stu对应的无参
 
 
 } 
