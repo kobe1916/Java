@@ -111,3 +111,47 @@ class User{
         this.name = name;
     }
 }
+
+
+
+
+
+
+
+/*
+数组初始化总共有三种：静态初始化、动态初始化、默认初始化
+
+数组的默认初始化
+  数组时引用类型，它的元素相当于类的实例变量，因此数组一经分配空间，
+其中的每个元素也被按照实例变量同样的方式被隐式初始化
+
+int a2[] = new int[2]//默认值：0.0
+boolean[] b = new boolean[2];//默认值：false，false
+String[] s = new String[2];//默认值：null,null
+*/
+
+package 数组;
+
+/**
+ * 测试数组的3种初始化方法
+ */
+public class Test02 {
+    public static void main(String[] args){
+        //静态初始化
+        int[] a = {2,3,50};
+        User[] b = {
+                new User(1001,"zhangsan"),
+                new User(1002,"lisi"),
+                new User(1003,"gaoqi")
+        };
+
+        //默认初始化
+        int[] c = new int[3];//默认给数组的元素进行赋值，赋值的规则和成员变量默认赋值规则一致
+
+        //动态初始化
+        int[] a1 = new int[2];//动态初始化数组，先分配空间
+        a1[0] = 1;//给数组元素赋值
+        a1[1] = 2;//给数组元素赋值
+    }
+}
+
