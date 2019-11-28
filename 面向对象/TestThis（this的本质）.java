@@ -9,10 +9,25 @@ this的本质“创建好的对象的地址”
 由于在构造方法调用前，对象以创建，因此在构造方法中也可以使用this代表“当前对象”
 */
 
+/*
+• this的作用:
+• this表示的是当前对象本身，
+• 更准确地说， this代表当前对象的一个引用。
+• 普通方法中使用this。
+• 区分类成员属性和方法的形参.
+• 调用当前对象的其他方法（可以省略）
+• 位置： 任意
+• 构造方法中使用this。
+• 使用this来调用其它构造方法
+• 位置： 必须是第一条语句
+• this不能用于static方法。 
+*/
+
 package 面向对象;
 
 public class TestThis {
     int a,b,c;
+
     TestThis(int a,int b){
         this.a = a;//this指当前对象
         this.b = b;
