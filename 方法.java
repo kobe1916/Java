@@ -37,7 +37,7 @@ public class TestMethod {
 }
 
 
-//重载的方法：实际是完全不同的方法，知识名称相同而已（形参个数、类型、顺序不同）
+//重载的方法：实际是完全不同的方法，只是名称相同而已（形参个数、类型、顺序不同）
 
 
 public class TestOverload {
