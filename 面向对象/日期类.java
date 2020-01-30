@@ -1,4 +1,4 @@
-mport java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 public class rl{
 public static void main(String[] args) {
